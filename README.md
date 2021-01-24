@@ -1,0 +1,2 @@
+Bodvar's Bakery is a cloud Bakery with Brawlhalla as the main theme.
+This company was started by an 18 year old boy named Rishi Krishnan who was really bored during the pandemic so he decided to make some money and hence started Bodvar's Bakery which was inspired from his faavourite game of all time, Brawlhalla.
