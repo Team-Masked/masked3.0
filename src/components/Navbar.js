@@ -76,7 +76,7 @@ function Navbar() {
                                 Contact Us
                             </Link>
                         </li>
-                        <li className="nav_item">
+                        {/* <li className="nav_item">
                             <Link
                                 to="/awareness"
                                 className="nav_links"
@@ -86,7 +86,7 @@ function Navbar() {
                             >
                                 Awareness
                             </Link>
-                        </li>
+                        </li> */}
                         <li className="nav_item">
                             <Link
                                 to="/signup"
