@@ -1,11 +1,12 @@
 import React from "react";
+import Guide from "../Guide";
 import Navbar from "../Navbar";
 
 function GuidePage() {
   return (
     <div>
       <Navbar />
-      <h1>Guide Page</h1>
+      <Guide />
     </div>
   );
 }

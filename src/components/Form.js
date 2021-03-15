@@ -120,7 +120,7 @@ function Form() {
               <input
                 className="btns"
                 type="submit"
-                value="Send Message"
+                value="Report Video"
               ></input>
             </div>
           </form>

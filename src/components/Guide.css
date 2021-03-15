@@ -1,0 +1,134 @@
+.container1, .container2, .container3, .container4, .container5 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.container1 div,.container2 div,.container3 div,.container4 div,.container5 div{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cont_main {
+    width: 100%;
+    background-color: black;
+}
+
+/* .header {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 5px;
+    padding: 0;
+    border: 3px rgb(245, 58, 136) solid  ;
+    background-image: url(https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/the-creation-of-adam-detail-of-the-hands-of-god-and-adam-michelangelo.jpg);
+    background-size: 1350px 150px;
+
+}
+
+.header h3{
+    font-size: 2em;
+} */
+
+.box1 {
+    padding: 2px;
+    flex: 1;
+    min-width: 200px;
+    order: 1;
+    background-image: linear-gradient(to right, rgb(245, 58, 136),#f16220);
+    border-radius: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    transition-delay: 1.2s;
+    animation-name: myanimation;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+
+}
+
+.box3 img{
+    max-width: 100%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.box3 img:hover{
+    border: 1px wheat solid;
+    
+}
+
+@keyframes myanimation {
+    0% {background-image: linear-gradient(to right, rgb(245, 58, 136),#f16220); border-radius: 0 0 0 0;}
+    5% {background-image: linear-gradient(to right, rgb(238, 29, 210),#ee6d22); border-radius: 0 30% 30% 0;}
+    10% {background-image: linear-gradient(to right, rgb(243, 222, 31),rgb(219, 17, 192)); border-radius: 0 50% 50% 0;}
+    15% {background-image: linear-gradient(to right,rgb(243, 222, 31),rgb(219, 17, 192)); border-radius: 0 50% 50% 0;}
+    20% {background-image: linear-gradient(to right, rgb(248, 252, 10),#ec00cd ); border-radius: 0 50% 50% 0;}
+}
+
+
+/*.box1:hover {
+    
+    background-image: linear-gradient(to right, rgb(230, 72, 9),#f50876)
+    transition: 1.2s;
+    
+    
+    
+   
+}*/
+
+.box2 {
+    flex: 2;
+    order: 2;
+    min-width: 200px;
+    background-color: rgb(56, 51, 51);
+    justify-self:auto;
+    
+    
+}
+
+.box2 p{
+    color: wheat;
+    font-size: larger;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box2:hover {
+    
+    background-color: wheat;
+    transition: 0.8s;
+    
+    
+    
+    
+   
+}
+.box2 p:hover{
+    color: black;
+    transition: 0.8s;
+    font-size:x-large;
+}
+
+
+.box3 {
+    flex: 2;
+    min-width: 200px;
+    order: 3;
+    /* background-color: blanchedalmond; */
+
+}
+
+
+/* @font-face {
+    font-family: 'Champion Gothic Heavyweight';
+    src: url('C:\Users\Sanjana\Desktop\masked2.0-master\src\components\font\ChampionGothic-Heavyweight.eot');
+    font-weight: 900;
+    font-style: normal;
+} */
+
