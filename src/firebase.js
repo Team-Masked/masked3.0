@@ -1,9 +1,19 @@
-const firebaseConfig = {
-    apiKey: "AIzaSyAvF3zgWT_rHsljTpxCy7ea5WQkMqs0p5I",
-    authDomain: "bodvar-s-bakery.firebaseapp.com",
-    projectId: "bodvar-s-bakery",
-    storageBucket: "bodvar-s-bakery.appspot.com",
-    messagingSenderId: "371354671519",
-    appId: "1:371354671519:web:39809b3c0521982c8045aa",
-    measurementId: "G-G31PRTF481"
-  };
+import firebase from "firebase";
+import "firebase/auth";
+
+var firebaseApp = firebase.initializeApp({
+  apiKey: "AIzaSyAZ-7sN_LjSdR9ScQPW4uP1TSu9_Dofz_8",
+  authDomain: "masked-f1bf0.firebaseapp.com",
+  projectId: "masked-f1bf0",
+  storageBucket: "masked-f1bf0.appspot.com",
+  messagingSenderId: "1055743265480",
+  appId: "1:1055743265480:web:28aae29952648d3b4233fd",
+});
+
+var db = firebaseApp.firestore();
+
+export { db };
+
+export const auth = firebaseApp.auth();
+
+export default firebaseApp;

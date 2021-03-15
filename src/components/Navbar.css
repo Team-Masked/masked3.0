@@ -1,5 +1,5 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(50, 51, 51) 0%, rgb(26, 23, 23) 100%);
+    background-image:linear-gradient(to right,rgb(226, 35, 131) ,#F94D00 );
     height: 80px;
     display: flex;
     justify-content: center;
@@ -68,6 +68,13 @@
   
   .menu_icon {
     display: none;
+  }
+
+  .sidebar__logo1 {
+    width: 50px;
+    border: 5px solid white;
+    border-radius: 20%;
+    margin-right: 10px
   }
   
   @media screen and (max-width: 960px) {

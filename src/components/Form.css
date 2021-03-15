@@ -1,0 +1,164 @@
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 5px 10px 5px 0;
+  font-size: 25px;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-image:linear-gradient(to right,rgb(226, 35, 131) ,#F94D00 );
+  color: white;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.content-wrapper {
+  background-color: #000;
+}
+
+.container {
+  height: 300px;
+  padding: 20px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #000;
+  color: #f638dc;
+}
+
+.band {
+  width: 100%;
+}
+
+.mask {
+  margin-left: 10px;
+  border: 5px solid #fff;
+  border-radius: 20%;
+  height: 80px;
+}
+
+.not {
+  display: none;
+}
+
+.form-element {
+  padding: 20px;
+}
+
+.custom-option {
+  position: relative;
+  display: block;
+  padding: 0 22px 0 22px;
+  font-size: 22px;
+  font-weight: 300;
+  color: #b030b0;
+  background-color: #202040;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-family: sans-serif;
+}
+
+.form__btns {
+  margin-top: 5px;
+}
+
+.bn {
+  display: inline-block;
+  padding: 26px 48px;
+  font-size: 34px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  background-image: linear-gradient(to right, rgb(226, 35, 131), #f94d00);
+}
+.wrap {
+  background-color: black;
+  margin: 0%;
+  margin-top: 0%;
+  padding: 0%;
+  widows: 100px;
+  color: white;
+}
+.text {
+  font-size: 30px;
+  color: #fff;
+}
+
+.tag {
+  font-size: 30px;
+}
+
+.tagline {
+  width: 668px;
+  margin: 0 auto;
+}
+
+.content {
+  color: #fff;
+}
+
+.content-wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.picture {
+  width: 450px;
+}
+
+.pic {
+  margin-left: 50px;
+  transform: translateY(30px);
+}
+
+@media screen and (max-width: 660px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .container {
+    height: 1000px;
+  }
+  .tagline {
+    width: 268px;
+    margin: 0 auto;
+  }
+  .picture {
+    width: 268px;
+  }
+  .text {
+    font-size: 20px;
+    width: 268px;
+  }
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

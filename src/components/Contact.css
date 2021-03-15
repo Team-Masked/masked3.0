@@ -1,0 +1,10 @@
+.the_end {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background-color: #000;
+    height: 100vh;
+}

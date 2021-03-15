@@ -1,21 +1,32 @@
-import './App.css';
-import Navbar from './components/Navbar';
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import Home from './components/pages/Home';
-// import Products from './components/pages/Products';
-// import About from './components/pages/About';
-import Footer from './components/Footer';
-import Cakes from './components/Cakes';
-import MainPage from './components/MainPage';
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import ContactPage from "./components/pages/ContactPage";
+import HomePage from "./components/pages/HomePage";
+import AwarenessPage from "./components/pages/AwarenessPage";
+import GuidePage from "./components/pages/GuidePage";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <MainPage />
-      <Cakes />
-      <Footer />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/home">
+          <HomePage />
+        </Route>
+        <Route path="/guide">
+          <GuidePage />
+        </Route>
+        <Route path="/contact">
+          <ContactPage />
+        </Route>
+        <Route path="/awareness">
+          <AwarenessPage />
+        </Route>
+        <Route path="/">
+          <HomePage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
