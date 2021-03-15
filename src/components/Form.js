@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import "./Form.css";
 import { db } from "../firebase";
 import women from "./images/women.jpg";
 
 function Form() {
-    const [link, setLink] = useState("");
+    const { url } = useParams();
+    // const requiredURL = url != "undefined" ? decodeURIComponent(url) : "";
+    let requiredURL = "";
+    if (url) {
+        requiredURL = decodeURIComponent(url) || "";
+    }
+    const [link, setLink] = useState(requiredURL);
     const [category, setCategory] = useState("none");
     const [story, setStory] = useState("");
     const [thumbsup, setThumbsUp] = useState("0");
     const [thumbsdown, setThumbsdown] = useState("0");
+    // setLink(url);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -32,6 +40,14 @@ function Form() {
         setCategory("none");
         setStory("");
     };
+    // function initializeLinkField() {
+    //     const search = useLocation().search;
+    //     const requiredLink = new URLSearchParams(search).get("url");
+    //     setLink(requiredLink);
+    // }
+    // useEffect(() => {
+    //     initializeLinkField();
+    // }, []);
 
     return (
         <div className="content-wrapper">

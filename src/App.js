@@ -13,7 +13,7 @@ function App() {
         <Router>
             <AuthProvider>
                 <Switch>
-                    <Route path="/home">
+                    <Route path="/home/:url">
                         <HomePage />
                     </Route>
                     <Route path="/guide">

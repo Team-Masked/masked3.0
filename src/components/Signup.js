@@ -41,7 +41,12 @@ function Signup() {
                     {error}
                 </div>
             )}
-            <form className="signup-form" onSubmit={handleSubmit}>
+            <form
+                className="signup-form"
+                onSubmit={() => {
+                    handleSubmit();
+                }}
+            >
                 <div className="form__element">
                     <label>Email ID</label>
                     <input
