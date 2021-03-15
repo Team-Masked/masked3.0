@@ -1,11 +1,12 @@
 import React from "react";
+import Awareness from "../Awareness";
 import Navbar from "../Navbar";
 
 function AwarenessPage() {
   return (
     <div>
       <Navbar />
-      <h1>Awareness Page</h1>
+      <Awareness />
     </div>
   );
 }

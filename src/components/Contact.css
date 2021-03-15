@@ -1,5 +1,4 @@
 .the_end {
-    /* margin-top: 80px; */
     display: flex;
     align-items: center;
     margin-bottom: -30px;
@@ -7,6 +6,5 @@
 
 .container {
     background-color: #000;
-    height: 100vh;
-    padding-bottom: 80px;
+    max-height: calc(100vh - 180px);
 }

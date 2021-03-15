@@ -9,6 +9,10 @@ textarea {
   resize: vertical;
 }
 
+.content-wrapper {
+  overflow: hidden;
+}
+
 label {
   padding: 5px 10px 5px 0;
   font-size: 25px;
@@ -150,8 +154,8 @@ input[type="submit"] {
     width: 268px;
     margin: 0 auto;
   }
-  .picture {
-    width: 268px;
+  .pic {
+    display: none;
   }
   .text {
     font-size: 20px;
